@@ -1,0 +1,18 @@
+.header {
+  grid-area: h;
+  background: linear-gradient(to right,
+  rgb(0, 0, 0) 0%,
+  rgba(0, 0, 0, 0.4) 40%,
+  rgba(0, 0, 0, 0.4) 60%,
+  rgb(0, 0, 0) 100%);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.header img {
+  width: 195px;
+  height: 55px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+}
