@@ -14,5 +14,11 @@
   height: 55px;
   border-radius: 5px;
   margin-bottom: 5px;
-
+}
+.loginBlock {
+  float: right;
+  color: white;
+}
+.loginBlock a {
+  color: white;
 }
