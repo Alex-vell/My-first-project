@@ -12,6 +12,8 @@ import * as axios from 'axios';
 import Users from './Users';
 import Preloader from "../Common/Preloader/Preloader";
 import {usersAPI} from "../../api/api";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import Dialogs from "../Dialogs/Dialogs";
 
 
 
@@ -70,7 +72,9 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps,
+let withRedirect =  withAuthRedirect(UsersContainer);
+
+export default withAuthRedirect(connect(mapStateToProps,
     {follow, unfollow, setCurrentPage,
         /*setUsers, setTotalUsersCount, toggleIsFetching,*/
-        toggleFollowingProgress, getUsers})(UsersContainer);
+        toggleFollowingProgress, getUsers})(withRedirect));
