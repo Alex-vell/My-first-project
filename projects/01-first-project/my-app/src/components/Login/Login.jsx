@@ -1,5 +1,6 @@
 import React from "react";
 import {Field, reduxForm} from "redux-form";
+/*import {onSubmit} from "../../redux/auth-reducer";*/
 
 const LoginForm = (props) => {
     return (
@@ -32,5 +33,6 @@ const Login = (props) => {
     </div>
 
 }
+
 
 export default Login;
